@@ -1,1 +1,1 @@
-Access http://localhost:8080/pokemon/ after vagrant up
+Access http://localhost:8080/sfuanime/ after vagrant up
