@@ -1,0 +1,1 @@
+/usr/local/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/vagrant/file/mysite/mysite.sock mysite.wsgi:application --log-level debug

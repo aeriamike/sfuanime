@@ -1,0 +1,1 @@
+Access http://localhost:8080/pokemon/ after vagrant up
