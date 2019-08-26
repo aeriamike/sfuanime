@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<link rel="icon" href="{% static 'sfuanime/logo.png' %}" >
 <link rel="stylesheet" type="text/css" href="style/style.css?v=1.1">
 <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -16,7 +16,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 
-
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+ <script>tinymce.init({selector:'textarea'});</script>
 <!-- Material Design for Bootstrap fonts and icons -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
@@ -42,6 +43,7 @@
 body {
     font-family: 'Encode Sans Expanded';
 }
+
 
 
 .button {
@@ -73,6 +75,33 @@ body {
   background-color: white;
   color: #25BAF5;
 }
+
+
+.center-cropped {
+  width: 500px;
+  height: 260px;
+  object-position:center;
+  object-fit:none;
+  overflow: hidden;
+}
+
+
+.center-cropped2 {
+  width: 100%;
+  height: 260px;
+  object-position:center;
+  object-fit:none;
+  overflow: hidden;
+}
+
+/* Set the image to fill its parent and make transparent */
+.center-cropped img {
+  min-height: 100%;
+  min-width: 100%;
+
+}
+
+
 
 </style>
 
@@ -128,6 +157,7 @@ body {
                 </button>
               </a>
 
+
               <a  href="/sfuanime/about">
               <button class="btn btn-lg" type="button"
                   aria-haspopup="true" aria-expanded="false">
@@ -173,10 +203,13 @@ body {
 
     {% endblock %}
 
-    <footer style="height:260px;background-color:grey;">
-
+    <footer style="height:260px;background-color:grey;" >
+        <div style="height:260px;width:100%;overflow:hidden;" >
+    <img src="{% static 'sfuanime/sakura_footer.jpg' %}" style="opacity:0.1;width:1800px;" class="" alt="" >
+  </div>
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
+      <div class="footer-copyright text-center py-3" style="position:relative;bottom:240px;">
+
         <i class="fa fa-facebook-official" style="font-size:50px;margin-top:40px;position:relative;right:30px;color:white;"></i>
         <i class="fa fa-twitter" style="font-size:50px;margin-top:40px;color:white;"></i>
         <i class="fa fa-discord" style="font-size:50px;margin-top:40px;position:relative;left:30px;color:white;" aria-hidden="true"></i>
@@ -187,7 +220,7 @@ body {
         <p style="font-size:14px;color:white;">© 2019 Copyright: SFU Anime Club. All rights reserved</p>
       </div>
 
-      <hr>
+
 
       <!-- Copyright -->
 

@@ -47,6 +47,11 @@ execute 'install' do
   command 'pip3 install Django gunicorn psycopg2-binary'
 end
 
+
+execute 'install-2' do
+  command 'pip3 install django-tinymce4-lite'
+end
+
 package 'python-psycopg2'
 package "postgresql"
 execute 'postgres_setup' do

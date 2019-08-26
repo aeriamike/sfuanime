@@ -1,2 +1,2 @@
-[{"fields":{"post_title":"First Post","post_content":"This is teh first post of sfu anime club.","post_date":"2019-08-18T12:37:32.802Z"},"model":"sfuanime.Posts"},
-{"fields":{"post_title":"Second Post","post_content":"This is the second post","post_date":"2019-08-20T01:17:32.802Z"},"model":"sfuanime.Posts"}]
+[{"fields":{"post_title":"First Post","post_content":"This is teh first post of sfu anime club.","post_date":"2019-08-18T12:37:32.802Z", "post_tag":"[\"Tag1\",\"Tag2\"]","post_pic":"sfuanime_post/caro2.jpg"},"model":"sfuanime.Posts"},
+{"fields":{"post_title":"Second Post","post_content":"This is the second post","post_date":"2019-08-20T01:17:32.802Z", "post_tag":"[\"Tag1\"]","post_pic":"sfuanime_post/caro3.jpg"},"model":"sfuanime.Posts"}]
