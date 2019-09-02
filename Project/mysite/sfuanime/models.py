@@ -18,9 +18,12 @@ class Posts(models.Model):
     post_date = models.DateTimeField()
     post_tag = ArrayField(models.CharField(max_length=30, null=True, blank=True), null=True)
     post_pic =  models.CharField(max_length=200)
+<<<<<<< HEAD
+=======
 
 class MyModel(models.Model):
     content = HTMLField()
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
 
 class ModelFoo(models.Model):
     content = TinyMCEModelField('Foo Content')

@@ -20,12 +20,19 @@
                     <h1 class="" style="color:white;margin-top:60px;font-size:36px;">Welcome to SFU Anime Beta</h1>
 
                       <p style="font-size:16px;color:white;margin-top:20px;"> This is a website about SFU Anime
-                      Here you will find the latest news about our events. Lorem ipsum asld alsdk alk dal dla
-                      dlad ada dla sdla djenc jos x shhsj aksx ak hxe xak.</p>
+                      Here you will find the latest news about our asdasdas events. Lorem ipsum asld alsdk alk dal dla
+                      dlad ada dla sdla djenc jos x shhsj aksx akasdasd
+			adasdsamd asd lasdl hxe xak.</p>
 
                       <button class="button button1" onClick="document.getElementById('middle').scrollIntoView();">MORE</button>
 
 
+<<<<<<< HEAD
+=======
+                      <button class="button button1" onClick="document.getElementById('middle').scrollIntoView();">MORE</button>
+
+
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
               </div>
 
 
@@ -41,7 +48,7 @@
 
                          <!-- Wrapper for slides -->
                          <div class="carousel-inner">
-                           <div class="item active">
+                           <div class="item active ">
                              <img src="{% static "sfuanime/caro1.jpg" %}">
                            </div>
 
@@ -69,23 +76,26 @@
       </div>
     <div class="row" style="height:260px;">
 
-      <div class="col-4" style="background-color:#6FE28D;">
-
-            <h1 class="" style="color:white">Events</h1>
+      <div class="col-4" style="background-color:#6FE28D;text-align:center;">
+            <i class="fas fa-calendar fa-10x" style="color:white;padding-top:50px;"></i>
+              <a href="{% url 'sfuanime:events' %}">
+            <h1 class="" style="color:white;padding-top:20px;">Events</h1></a>
 
         </div>
 
-        <div class="col-4" style="background-color:#7F8296;">
+        <div class="col-4" style="background-color:#7F8296;text-align:center;">
 
-
-                <h1 class="" style="color:white">Gallery</h1>
+          <i class="fas fa-picture-o fa-10x" style="color:white;padding-top:50px;"></i>
+                <a href="{% url 'sfuanime:postmaker' %}">
+                <h1 class="" style="color:white;padding-top:20px;">Gallery</h1></a>
 
           </div>
 
-          <div class="col-4" style="background-color:#EB736A;">
+          <div class="col-4" style="background-color:#EB736A;text-align:center;">
 
-
-                  <h1 class="" style="color:white">Membership</h1>
+            <i class="fas fa-address-card fa-10x" style="color:white;padding-top:50px;"></i>
+                <a href="{% url 'sfuanime:admins' %}">
+                  <h1 class="" style="color:white;padding-top:20px;">Membership</h1></a>
 
             </div>
 
@@ -95,21 +105,24 @@
 
       <div class="row" style="height:260px;">
 
-        <div class="col-4" style="background-color:#8F74A3;">
-
-                <h1 class="" style="color:white">Contact</h1>
+        <div class="col-4" style="background-color:#8F74A3;text-align:center;">
+          <i class="fas fa-phone fa-10x" style="color:white;padding-top:50px;"></i>
+                  <a href="{% url 'sfuanime:about' %}">
+                <h1 class="" style="color:white;padding-top:20px;">Contact</h1></a>
           </div>
 
-          <div class="col-4" style="background-color:#2CB66E;">
-
-                  <h1 class="" style="color:white">Mascot</h1>
+          <div class="col-4" style="background-color:#2CB66E;text-align:center;">
+            <i class="fas fa-smile-o fa-10x" style="color:white;padding-top:50px;"></i>
+                  <a href="{% url 'sfuanime:about' %}">
+                  <h1 class="" style="color:white;padding-top:20px;">Mascot</h1></a>
             </div>
 
-            <div class="col-4" style="background-color:#6374EC;">
-
-                <h1 class="" style="color:white">Sponsorship</h1>
+            <div class="col-4" style="background-color:#6374EC;text-align:center;">
+              <i class="fas fa-handshake-o fa-10x" style="color:white;padding-top:50px;"></i>
+                    <a href="{% url 'sfuanime:about' %}">
+                  <h1 class="" style="color:white;padding-top:20px;">Sponsorship</h1>
             </div>
-
+            </a>
 
         </div>
 
@@ -121,6 +134,7 @@
   <div id="middle" class="container" style="">
         <h1 class="text-primary">Welcome to SFU Anime Beta</h1>
     	     </div>
+<<<<<<< HEAD
 
     <div class="box" style="background-color:#e8e8e8;padding:20px;">
       <p style="font-size:20px;"> This is a website about SFU Anime</p>
@@ -136,30 +150,23 @@
 
     <div class="col-3" style="margin-top:100px;">
 
-      <h1 class="text-primary">Important Events</h1>
+      <h1 class="text-dark">Important Events</h1>
       <br>
+      <a href="{% url 'sfuanime:post_tag' "Tag1" %}"><p style="font-size:20px;"> Summer Festival</p></a>
 
-      <p style="font-size:20px;"> Summer Festival</p>
+      <a href="{% url 'sfuanime:post_tag' "Tag2" %}"><p style="font-size:20px;"> Weekly Screening Week 12</p></a>
 
-      <p style="font-size:20px;"> Weekly Screening Week 12</p>
-
-      <p style="font-size:20px;"> Icebreaker</p>
-      <br>
-
-
-
-      <h1 class="text-primary">Post by Month</h1>
+      <a href="{% url 'sfuanime:post_tag' "Tag2" %}"><p style="font-size:20px;"> Icebreaker</p></a>
       <br>
 
 
-            <p style="font-size:20px;"> August 2019 </p>
 
-
-            <p style="font-size:20px;"> July 2019 </p>
-
-              <p style="font-size:20px;"> June 2019 </p>
-          <br>
-
+      <h1 class="text-dark">Post by Month</h1>
+      <br>
+            <a href="{% url 'sfuanime:post_month' 201908 %}">  <p style="font-size:20px;"> August 2019 </p></a>
+            <a href="{% url 'sfuanime:post_month' 201907 %}">  <p style="font-size:20px;"> July 2019 </p></a>
+            <a href="{% url 'sfuanime:post_month' 201906 %}">  <p style="font-size:20px;"> June 2019 </p></a>
+      <br>
 
       </div>
 
@@ -195,6 +202,119 @@
 {% endif %}
 
 {% endfor %}
+=======
+
+    <div class="box" style="background-color:#e8e8e8;padding:20px;">
+      <p style="font-size:20px;"> This is a website about SFU Anime</p>
+      <p style="font-size:20px;">Here you will find the latest news about our events</p>
+
+      <p style="line-height: 2;font-size:14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc. Hac habitasse platea dictumst vestibulum. Justo eget magna fermentum iaculis eu non diam. A scelerisque purus semper eget duis. Scelerisque fermentum dui faucibus in ornare. Mus mauris vitae ultricies leo integer malesuada. Eget felis eget nunc lobortis. Mattis molestie a iaculis at erat pellentesque. Nisl nisi scelerisque eu ultrices vitae.</p>
+</div>
+
+
+
+
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
+    </div>
+
+  <div class="col-6" style="">
+
+<<<<<<< HEAD
+=======
+      <h1 class="text-primary">Important Events</h1>
+      <br>
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
+
+
+
+<<<<<<< HEAD
+
+
+{% for p in posts %}
+{% if p.id == 2 %}
+<div class="card" style="">
+  <div class="center-cropped" style="width:470px;overflow:hidden;">
+      <img class="card-img-top" src="/static/{{ p.post_pic }}" >
+  </div>
+
+=======
+      <p style="font-size:20px;"> Icebreaker</p>
+      <br>
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
+
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="{% url 'sfuanime:post_index' p.id %}"><h1 class="text-primary">{{p.post_title}}</h1></a>
+    <p style="font-size:18px;">{{p.post_date}}</p>
+    <p style="font-size:18px;">{{p.post_content| truncatewords:10}}</p>
+  <a href="{% url 'sfuanime:post_index' p.id %}"><h3>Check it out</h3></a>
+  </div>
+</div>
+{% endif %}
+
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="row" style="margin-top:20px;margin-bottom:60px;">
+  <div class="col-6" style="">
+
+
+
+
+{% for p in posts %}
+{% if p.id == 3 %}
+<div class="card" style="">
+  <div class="center-cropped" style="width:470px;overflow:hidden;">
+
+      <img class="card-img-top" src="/static/{{ p.post_pic }}" >
+  </div>
+
+
+<<<<<<< HEAD
+=======
+  <h1 class="" style="margin-top:30px;font-size:20px;">Latest Post</h1>
+
+<div class="row" style="margin-top:20px;margin-bottom:60px;">
+  <div class="col-6" style="">
+
+
+
+
+{% for p in posts %}
+{% if p.id == 1 %}
+<div class="card" style="">
+  <div class="center-cropped" style="width:470px;overflow:hidden;">
+
+      <img class="card-img-top" src="/static/{{ p.post_pic }}" >
+  </div>
+
+
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="{% url 'sfuanime:post_index' p.id %}"><h1 class="text-primary">{{p.post_title}}</h1></a>
+    <p style="font-size:18px;">{{p.post_date}}</p>
+    <p style="font-size:18px;">{{p.post_content| truncatewords:10}}</p>
+  <a href="{% url 'sfuanime:post_index' p.id %}"><h3>Check it out</h3></a>
+  </div>
+</div>
+{% endif %}
+
+{% endfor %}
     </div>
 
   <div class="col-6" style="">
@@ -205,7 +325,11 @@
 
 
 {% for p in posts %}
+<<<<<<< HEAD
+{% if p.id == 4 %}
+=======
 {% if p.id == 2 %}
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
 <div class="card" style="">
   <div class="center-cropped" style="width:470px;overflow:hidden;">
       <img class="card-img-top" src="/static/{{ p.post_pic }}" >
@@ -240,7 +364,10 @@
 
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
     <div class="row" style="margin-top:60px;margin-bottom:60px;">
 
       <hr style="display:block;background-color:grey;height:1px;width:100%;">

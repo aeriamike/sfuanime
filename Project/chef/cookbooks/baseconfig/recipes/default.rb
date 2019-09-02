@@ -69,7 +69,7 @@ execute 'build_sfuanime_model' do
 end
 
 
-execute 'build_sfuanime_model' do
+execute 'build_sfuanime_model2' do
   cwd '/home/vagrant/files/mysite'
   user 'vagrant'
   command 'python3 manage.py sqlmigrate sfuanime 0001'

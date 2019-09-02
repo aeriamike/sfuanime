@@ -11,17 +11,49 @@
            <a href="{% url 'sfuanime:posts' %}"><button type="button" class="btn btn-primary" style="font-size:20px;display:inline-block;" >
           Post</button></a>
             <p style="font-size:14px;display:inline-block;">></p>
+<<<<<<< HEAD
+
+            <button type="button" class="btn btn-primary" style="font-size:20px;display:inline-block;" >
+          {{taggy}}</button>
+=======
               {% for p in postid %}
             <button type="button" class="btn btn-primary" style="font-size:20px;display:inline-block;" >
           {{p.post_title}}</button>
             {% endfor %}
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
 
 
       <div class="row">
 
         <div class="col" style="">
 
+<<<<<<< HEAD
+
+                          {% for t in tag_ans %}
+
+                          <div class="card" style="margin-top:20px;">
+                            <div class="center-cropped">
+                                <img class="card-img-top" src="/static/{{ t.post_pic }}" >
+                            </div>
+
+
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <a href="{% url 'sfuanime:post_index' t.id %}"><h1 class="text-primary">{{t.post_title}}</h1></a>
+                              <p style="font-size:18px;">{{t.post_date}}</p>
+                              <p style="font-size:18px;">{{t.post_content| truncatewords:100}}</p>
+
+                        
+
+                            </div>
+                          </div>
+
+                          {% endfor %}
+
+
+=======
             
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
 
 
         </div>

@@ -36,6 +36,31 @@ def post_index(request, post_id):
     prev = post_id - 1
     length = len(Posts.objects.all())
 
+<<<<<<< HEAD
+    return render(request, 'sfuanime/post_index.html',{"postid":postid,"next":next,"length":length, "prev":prev})
+
+
+def post_tag(request,tag):
+    taggy = tag
+    posty = Posts.objects.all()
+
+    tag_ans= posty.filter(post_tag__contains = [tag])
+
+    return render(request, 'sfuanime/post_tag.html',{"tag":tag,"tag_ans":tag_ans})
+
+
+def post_month(request,time):
+
+    year = time[:4]
+    month = time[4:]
+    print(year)
+    print(month)
+
+
+    dep =Posts.objects.filter(post_date__year = year,post_date__month = month)
+
+    return render(request, 'sfuanime/post_month.html',{"time":time,"dep":dep,"month":month,"year":year})
+=======
     if length-1>post_id:
         return render(request, 'sfuanime/index.html', {"posts":posts})
 
@@ -51,6 +76,7 @@ def post_tag(request,tag):
 def post_month(request,month):
 
     return render(request, 'sfuanime/post_month.html')
+>>>>>>> 73f157eac73a6ce53f5775d16b5e182438dd4a21
 
 
 
